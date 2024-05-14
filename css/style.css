@@ -1,0 +1,516 @@
+:root {
+    --primary: #1D3354;
+    --blue-light: #467599;
+    --grey-light: #F9FAFB;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+a {
+    text-decoration: none;
+    color: white !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav {
+    background-color: var(--blue-light);
+    text-align: center;
+    padding: 14px 0px;
+}
+
+nav a {
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.btn {
+    border-radius: 30px;
+    border: none;
+    padding: 13px 40px;
+    transition: all;
+    transition-duration: 150ms;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: #162a49;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#jumbotron {
+    background-color: #EEEEEE;
+    min-height: 300px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+#jumbotron .btn-absolute {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+#jumbotron .logo {
+    margin-bottom: 40px;
+}
+
+#jumbotron .content {
+    padding: 20px 0;
+    text-align: center;
+    max-width: 50%;
+}
+
+#jumbotron .content h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+#jumbotron .content span {
+    color: var(--blue-light);
+    size: 18px;
+    font-weight: 400;
+}
+
+#description {
+    padding: 80px 0;
+}
+
+#description h3 {
+    font-weight: 600;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+#description .p-accordion__tab {
+    font-size: 25px;
+    padding: 20px;
+}
+
+#description .p-accordion__tab::before {
+    display: none;
+}
+
+.p-accordion__tab-label {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* Custom styles to position the accordion icon on the right */
+.p-accordion__tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--primary);
+}
+
+.p-accordion__icon {
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+.p-accordion__tab[aria-expanded=false] .minus {
+    display: none;
+}
+
+.p-accordion__tab[aria-expanded=true] .plus {
+    display: none;
+}
+
+#features {
+    background-color: var(--grey-light);
+    padding: 80px 0;
+    text-align: center;
+}
+
+#features h2 {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 36px;
+}
+
+#features span {
+    color: #475467;
+    size: 20px;
+}
+
+#features .row {
+    margin-top: 60px;
+}
+
+#features .row .flex-center {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#features .card-icon {
+    background-color: #D3EEFE;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+#features h6 {
+    color: var(--primary);
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#features p {
+
+    color: #475467;
+    size: 16px;
+    line-height: 24px;
+}
+
+#knowledge {
+
+    padding: 80px 0;
+    text-align: center;
+}
+
+#knowledge .card {
+    background-color: #D3EEFE;
+    padding: 16px;
+    color: var(--blue-light);
+    min-height: 300px;
+    margin-bottom: 33px;
+}
+
+
+#knowledge .card h6 {
+    color: var(--blue-light);
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#knowledge .card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+#info {
+
+    padding: 100px 0;
+    text-align: center;
+}
+
+#info .card {
+    background-color: #D3EEFE;
+    padding: 16px;
+    color: var(--blue-light);
+    min-height: 300px;
+    margin-bottom: 33px;
+}
+
+
+#info .card h3 {
+    color: var(--blue-light);
+    font-style: normal;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#info .card h6 {
+    color: var(--blue-light);
+    font-style: normal;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#info .card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+#info .card .input {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    justify-content: center;
+}
+
+#info .card .input label {
+    position: relative;
+    padding-top: 0;
+    max-width: 400px;
+    width: 100%;
+}
+
+#info .card .input input {
+    width: 100% !important;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    margin-top: 0;
+    padding: 18px 18px;
+}
+
+#info .card .input .btn {
+    background-color: #467599;
+    text-wrap: nowrap;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 18px 18px;
+}
+
+#info .card .input span {
+    position: absolute;
+    height: 16px;
+    left: 0;
+    font-size: 14px;
+    color: #666666;
+    bottom: 0;
+}
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 12px;
+}
+
+footer .flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+footer .flex-col span {
+    color: #94969C;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 14px;
+}
+
+footer ul li a {
+    color: #94969C !important;
+    font-weight: bold;
+}
+
+footer .store {
+    justify-content: end;
+    text-align: right;
+}
+
+footer .store h6 {
+    font-weight: 500;
+    color: #222222;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+footer .store img {
+    margin-left: auto;
+    height: 40px;
+    width: 135px;
+}
+
+footer .bottom-footer {
+    margin-top: 12px;
+    border-top: 1px solid var(--primary);
+    padding-top: 12px;
+}
+
+footer .bottom-footer .child {
+    display: flex;
+    justify-content: space-between;
+}
+
+#testimoni {
+    padding: 60px 0;
+    background-color: var(--grey-light);
+}
+
+#testimoni .avatar {
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+}
+
+#testimoni .avatar .text {
+    margin-top: 0;
+}
+
+#testimoni .avatar .text h6 {
+    margin-bottom: 0;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#testimoni .avatar .text span {
+    margin-top: 0;
+    color: #475467;
+    font-size: 16px;
+}
+
+
+.swiper-container {
+    width: 100%;
+    /* height: 388px; */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.swiper-pagination-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #888;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.swiper-pagination-button-active {
+    background-color: #333;
+}
+
+.swiper-slide .p-card {
+
+    padding: 62px 20px;
+    /* height: 388px; */
+    height: 100%;
+    text-align: left;
+}
+
+.swiper-slide .p-card img {
+    margin-bottom: 20px;
+}
+
+
+.swipeIn {
+
+    animation: swipeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+#feature {
+    opacity: 0;
+    transform: translateX(-120px);
+}
+
+#knowledgeChild {
+    opacity: 0;
+    transform: translateX(-120px);
+}
+
+@keyframes swipeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.img-animation {
+    opacity: 0;
+    animation: opacityAnim 1s steps(40) forwards;
+}
+
+@keyframes opacityAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#text-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    /* animation: typing 3s steps(40) forwards; */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #jumbotron .content {
+        max-width: 100%;
+    }
+
+    #jumbotron .btn-absolute {
+        right: 20px;
+    }
+
+    footer .bottom-footer .child {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+}
